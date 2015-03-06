@@ -32,18 +32,3 @@ function queue() {
   return q;
 }
 
-queue().enqueue([one, two]).resolve(done);
-
-function one (callback) {
-  console.log('one')
-  callback();
-}
-
-function two (callback) {
-  console.log('two');
-  callback();
-}
-
-function done () {
-  console.log('done');
-}
