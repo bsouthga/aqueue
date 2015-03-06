@@ -14,7 +14,7 @@ function queue() {
     fn instanceof Array ?
       (funcs = funcs.concat(fn)) :
       funcs.push(fn);
-    return q;
+    return this;
   };
 
   q.dequeue = function(callback) {
